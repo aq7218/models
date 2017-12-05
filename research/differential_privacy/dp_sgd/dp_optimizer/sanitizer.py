@@ -99,7 +99,7 @@ class AmortizedGaussianSanitizer(object):
         #   Dwork and Roth, The Algorithmic Foundations of Differential
         #   Privacy, Appendix A.
         #   http://www.cis.upenn.edu/~aaroth/Papers/privacybook.pdf
-        sigma = tf.sqrt(2.0 * tf.log(1.25 / delta)) / eps
+        sigma = tf.sqrt(2.0 * tf.log(1.25 / delta)) / eps   # 57页
 
     l2norm_bound, clip = option
     if l2norm_bound is None:
